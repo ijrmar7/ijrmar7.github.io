@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    background: #fafafa;
+}
+
+header {
+    position: fixed;
+    background: #ffab40;
+    color: white;
+    width: 100%;
+    border-bottom: 2px solid #d50000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li:hover {
+    background: #ff9100;
+    border-bottom: 2px solid #d50000;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background: #d50000;
+    padding: 5px 20px;
+}
+
+.nav-button a:hover {
+    background: #e53935;
+}
+
+
+.banner {
+    background: url('https://images.unsplash.com/photo-1633545491399-54a16aa6a871?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172');
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-items {
+    text-align: center;
+    color: #ff9100;
+}
+
+.banner-items p {
+    background: #e53935;
+    color: white;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@media(min-width: 768px) {
+    .mission {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .team-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.mission-square {
+    flex-basis: 50%;
+    border: 1px solid #e53935;
+    background: #ffab40;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.mission-square:hover {
+    background: #ff9100;
+}
+
+.projects {
+    margin: 1% 0;
+}
+
+.projects h2, .team h2 {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.projects-square {
+    display: flex;
+    height: 450px;
+    flex-basis: 50%;
+    align-items: flex-end;
+    border: 2px solid #d5000044;
+}
+
+.projects-square h3, .team-square h3 {
+    background: #d5000044;
+    color: white;
+    width: 100%;
+    padding: 10px 50px;
+}
+
+.valorant {
+    background: url('https://images.unsplash.com/photo-1548686304-5c3be888a00b?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170');
+    background-position: center;
+    background-size: cover;
+}
+
+.csgo {
+    background: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170');
+    background-position: center;
+    background-size: cover;
+}
+
+.dota2 {
+    background: url('https://images.unsplash.com/photo-1636487658586-2e83d26f5e8c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172');
+    background-position: center;
+    background-size: cover;
+}
+
+.pubgm {
+    background: url('https://images.unsplash.com/photo-1626686707291-7bda5c45e8a8?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632');
+    background-position: center;
+    background-size: cover;
+}
+
+.team-square {
+    display: flex;
+    height: 450px;
+    flex-basis: 40%;
+    align-items: flex-end;
+    border: 2px solid #d5000044;
+}
+
+.founder {
+    background: url('https://images.unsplash.com/photo-1620161910388-078ca10a6fba?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074');
+    background-position: center;
+    background-size: cover;
+}
+
+.co-founder {
+    background: url('https://images.unsplash.com/photo-1555421689-d68471e189f2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170');
+    background-position: center;
+    background-size: cover;
+}
+
+.coach {
+    background: url('https://images.unsplash.com/photo-1557424169-2dfbc683a1c6?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170');
+    background-position: center;
+    background-size: cover;
+}
+
+.manager {
+    background: url('https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170');
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+    display: flex;
+    background: #d50000;
+    padding: 20px 25px;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-item {
+    margin-bottom: 10px;
+}
+
+.footer-item h3, .footer-item p span {
+    color: #ffab40;
+}
+
+.footer-logo {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle !important;
+}
