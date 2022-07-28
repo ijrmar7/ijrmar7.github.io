@@ -11,10 +11,10 @@
     <nav>
       <h1 id="logo">Jonash Marcelino</h1>
       <ul>
-        <li>About Me</li>
-        <li>Projects</li>
-        <li>Skills</li>
-        <li>Contacts</li>
+        <li class="navlinks active" onclick="navlink(this)"><a href="#about">About Me</a></li>
+        <li class="navlinks" onclick="navlink(this)"><a href="#projects">Projects</a></li>
+        <li class="navlinks" onclick="navlink(this)"><a href="#skills">Skills</a></li>
+        <li class="navlinks" onclick="navlink(this)"><a href="#contacts">Contacts</a></li>
       </ul>
     </nav>
     <main>
@@ -22,48 +22,114 @@
         <div class="about-container">
           <h2>About Me</h2>
           <p>Hello world! I'm Jonash, Jonash Marcelino, but you can just call me Nash for short. I'm a Computer Science student based on the Philippines. Currently, I'm a first year student that love to code and self-studying.</p>
-          <p>Fun fact avout me is I love coding and I consider it as my passion. I always study and practice in my free time. If you are here reading this, this is my portfolio project on Codecademy.</p>
+          <p>Fun fact about me is I love coding and I consider it as my passion. I always study and practice in my free time. If you are here reading this, this is my portfolio project on Codecademy.</p>
           <p>This Portfolio Website is one of Codecademy's projects. I'm tasked to build my static personal porfolio site, I kept this simple, and if you're here seeing this, I hope you're liking my work!</p>
         </div>
+        <img src="./resources/img/profile.jpg" alt="Jonash Marcelino's picture">
       </section>
       <section id="projects">
         <h2>Projects</h2>
-        <article>
-          <h3>Web Development Cheatsheet Website</h3>
-          <p>dadada</p>
-        </article>
-        <article>
-          <h3>Design Cheatsheet Website</h3>
-          <p>dadada</p>
-        </article>
-        <article>
-          <h3>Company Website</h3>
-          <p>dadada</p>
-        </article>
-        <article>
-          <h3>Mixed Message JS App</h3>
-          <p>dadada</p>
-        </article>
+        <ol>
+          <li>
+            <h3 onclick="toggleDisplay('web-cheatsheet-body')">WebDev Cheatsheet Website</h3>
+            <div id="web-cheatsheet-body" class="project-container">
+              <h4>Challenge Project: Build Your Own Cheat Sheet</h4>
+              <p class="goal">Project Goals</p>
+              <p>
+                In this project, you'll be building your own reference cheat sheet to help you build more websites in the future! Although there are great places to learn HTML & CSS like Codecademy, the best reference for yourself is often your own notes and projects.
+              </p>
+              <p class="prerequisites">Prerequisites</p>
+              <ul>
+                <li>HTML & CSS</li>
+                <li>Git and GitHub</li>
+                <li>Command line</li>
+              </ul>
+              <a href="test" class="link"><i class="fa-solid fa-link"></i> Github Link</a>
+              <a href="test" class="link"><i class="fa-solid fa-link"></i> Preview</a>
+            </div>
+          </li>
+          <li>
+            <h3 onclick="toggleDisplay('design-cheatsheet-body')">Design Cheatsheet Website</h3>
+            <div id="design-cheatsheet-body" class="project-container">
+              <h4>Challenge Project: Build a Website Design System</h4>
+              <p class="goal">Project Goals</p>
+              <p>
+                In this project, you'll be building your own basic design system for a website. In essence, you'll be building a website to help you build MORE websites in the future! On your site, you'll collect all the colors, fonts, and some of the repeating styles.
+              </p>
+              <p class="prerequisites">Prerequisites</p>
+              <ul>
+                <li>HTML & CSS</li>
+                <li>Git and GitHub</li>
+                <li>Command line</li>
+              </ul>
+              <a href="test" class="link"><i class="fa-solid fa-link"></i> Github Link</a>
+              <a href="test" class="link"><i class="fa-solid fa-link"></i> Preview</a>
+            </div>
+          </li>
+          <li>
+            <h3 onclick="toggleDisplay('company-body')">Company Website</h3>
+            <div id="company-body" class="project-container">
+              <h4>Challenge Project: Build a Website Design System</h4>
+              <p class="goal">Project Goals</p>
+              <p>
+                In this project, you'll be using flexbox to design and build the layout for a company's homepage. You can choose to build a new homepage for an existing company or imagine your own dream company!
+              </p>
+              <p class="prerequisites">Prerequisites</p>
+              <ul>
+                <li>HTML & CSS</li>
+                <li>Git and GitHub</li>
+                <li>Command line</li>
+              </ul>
+              <a href="test" class="link"><i class="fa-solid fa-link"></i> Github Link</a>
+              <a href="test" class="link"><i class="fa-solid fa-link"></i> Preview</a>
+            </div>
+          </li>
+          <li>
+            <h3 onclick="toggleDisplay('mixed-message-body')">Mixed Message JS App</h3>
+            <div id="mixed-message-body" class="project-container">
+              <h4>Challenge Project: Mixed Message</h4>
+              <p class="goal">Project Goals</p>
+              <p>
+                For this project, you will build a message generator program. Every time a user runs a program, they should get a new, randomized output. You're welcome to take the project in a couple of different forms, like an astrology generator, inspirational message, or nonsensical jokes. To make your program truly random, the message that it outputs should be made up of at least three different pieces of data. Take what you know of JavaScript syntax so far to build the program and customize it to your liking.
+              </p>
+              <p class="goal">Project Objectives</p>
+              <ul>
+                <li>Build a message generator program using JavaScript</li>
+                <li>Use Git version control</li>
+                <li>Use command line</li>
+                <li>Develop locally on your computer</li>
+              </ul>
+              <p class="prerequisites">Prerequisites</p>
+              <ul>
+                <li>JavaScript</li>
+                <li>Git and GitHub</li>
+                <li>Command line</li>
+              </ul>
+              <a href="test" class="link"><i class="fa-solid fa-link"></i> Github Link</a>
+              <a href="test" class="link"><i class="fa-solid fa-link"></i> Preview</a>
+            </div>
+          </li>
+        </ol>
       </section>
       <section id="skills">
         <h2>Skills</h2>
-        <article>
-          <h3>Front-End Development</h3>
-          <p>dadada</p>
-        </article>
-        <article>
-          <h3>Back-End Development</h3>
-          <p>dadada</p>
-        </article>
-      </section>
-      <section id="contacts">
-        <h2>Contacts</h2>
-        <p>dadada</p>
+        <div class="skills-container">
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-node-js"></i>
+          <i class="fa-brands fa-react"></i>
+          <i class="fa-brands fa-git"></i>
+          <i class="fa-solid fa-terminal"></i>
+          <i class="fa-brands fa-npm"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
       </section>
     </main>
     <footer>
      <p>&copy; Copyright 2022, Jonash Marcelino. All Rights Reserved.</p>
     </footer>
+    <script src="https://kit.fontawesome.com/0b6b04a396.js" crossorigin="anonymous"></script>
     <script src="./resources/js/app.js"></script>
   </body>
 </html>

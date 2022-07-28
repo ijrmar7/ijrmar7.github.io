@@ -1,3 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 16px;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.navlinks {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+
+.navlinks.active {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.navlinks.active a {
+    color: white;
+}
+
+section#projects h3 {
+    cursor: pointer;
+}
+
+#web-cheatsheet-body,
+ #design-cheatsheet-body,
+  #company-body,
+   #mixed-message-body {
+    display: none;
+}
+
+main {
+    padding: 0 5%;
+    border-left: 1px solid rgb(170, 170, 170);
+    border-right: 1px solid rgb(170, 170, 170);
+
+}
+
+section {
+    margin: 2% 0;
+    display: flex;
+}
+
+section h2 {
+    margin: 2% 0;
+}
+
+#projects {
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+#projects ol {
+    margin: 0 8%;
+}
+
+#projects ol > li {
+    margin: 5% 0;
+}
+
+.about-container {
+    display: block;
+}
+
+#about {
+    display: flex;
+}
+
+#about img {
+    width: 500px;
+    border-radius: 5%;
+}
+
+.project-container {
+    margin: 0 5%;
+}
+
+.project-container ul {
+    margin: 0 8%;
+}
+
+.project-container p {
+    margin: 0 5%;
+}
+
+.project-container p.goal,
+ .project-container p.prerequisites {
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+}
+
+#skills {
+    flex-direction: column;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.link {
+    color: rgb(139, 139, 243);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 2%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #about {
+        display: block;
+    }
+    #about img {
+        width: 400px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .skills-container {
+        display: block;
+        font-size: 60px;
+    }
+
+    .project-container ul {
+        margin: 0 15%;
+    }
     
+    .project-container p {
+        margin: 0 10%;
+    }
+    main {
+        border: none;
+    }
 }
