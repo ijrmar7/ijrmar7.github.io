@@ -52,7 +52,7 @@ nav a {
     color: white;
 }
 
-section#projects h3 {
+section#works h3 {
     cursor: pointer;
 }
 
@@ -79,17 +79,17 @@ section h2 {
     margin: 2% 0;
 }
 
-#projects {
+#works {
     flex-direction: column;
     flex-shrink: 0;
 }
 
 
-#projects ol {
+#works ol {
     margin: 0 8%;
 }
 
-#projects ol > li {
+#works ol > li {
     margin: 5% 0;
 }
 
@@ -126,6 +126,7 @@ section h2 {
 
 footer {
     text-align: center;
+    margin: 20px 0;
 }
 
 #skills {
@@ -141,11 +142,28 @@ footer {
     margin: 0 20px;
 }
 
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
 .link {
     color: rgb(139, 139, 243);
     font-weight: bold;
     text-decoration: none;
     margin: 0 2%;
+}
+
+#contact {
+    flex-direction: column;
+}
+
+#contact a {
+    color: black;
 }
 
 @media only screen and (max-width: 768px) {
